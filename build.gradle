@@ -31,10 +31,10 @@ task rebuild {}
 rebuild.dependsOn << clean
 rebuild.dependsOn << test
 
-task core(type: GoBqaTest) {
-    suites "core/*.xls"
-//    headless = false
+task carteleria(type: GoBqaTest) {
+    suites "carteleria/*.xls"
+    headless = false
 //    systemProperty "baseUrl", "http://srvlappst61.garba.com.ar:8080"
 }
 
-test.dependsOn << core
+test.dependsOn << carteleria
