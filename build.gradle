@@ -1,0 +1,40 @@
+import com.bairesqa.gobqa.gradle.GoBqaTest
+
+// plugins { id "bairesqa.gobqa" version "0.3.wc" }
+buildscript { dependencies { classpath files("lib/gobqa-0.4.jar") } }
+apply plugin: "bairesqa.gobqa"
+
+wrapper {
+    gradleVersion = '4.9'
+    //noinspection UnnecessaryQualifiedReference
+    distributionType = Wrapper.DistributionType.ALL
+}
+
+apply plugin: 'idea'
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+idea {
+    module {
+        jdkName = '1.8'
+        inheritOutputDirs = false
+        outputDir = file("build/classes/java/main")
+        testOutputDir = file("build/classes/java/test")
+    }
+}
+
+task rebuild {}
+rebuild.dependsOn << clean
+rebuild.dependsOn << test
+
+task core(type: GoBqaTest) {
+    suites "core/*.xls"
+//    headless = false
+//    systemProperty "baseUrl", "http://srvlappst61.garba.com.ar:8080"
+}
+
+test.dependsOn << core
