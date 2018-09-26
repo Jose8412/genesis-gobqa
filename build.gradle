@@ -37,4 +37,10 @@ task carteleria(type: GoBqaTest) {
 //    systemProperty "baseUrl", "http://srvlappst61.garba.com.ar:8080"
 }
 
+task catalogo(type: GoBqaTest) {
+    suites "catalogo/*.xls"
+//    headless = false
+//    systemProperty "baseUrl", "http://srvlappst61.garba.com.ar:8080"
+}
+
 test.dependsOn << carteleria
