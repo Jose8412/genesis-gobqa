@@ -18,6 +18,10 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    runtime files('lib/gobqa-0.4.jar')
+}
+
 idea {
     module {
         jdkName = '1.8'
