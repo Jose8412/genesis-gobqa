@@ -37,14 +37,12 @@ rebuild.dependsOn << test
 
 task carteleria(type: GoBqaTest) {
     suites "carteleria/*.xls"
-//    headless = false
-//    systemProperty "baseUrl", "http://srvlappst61.garba.com.ar:8080"
+    headless = false
 }
 
 task catalogo(type: GoBqaTest) {
     suites "catalogo/*.xls"
-//    headless = false
-//    systemProperty "baseUrl", "http://srvlappst61.garba.com.ar:8080"
+    headless = false
 }
 
 test.dependsOn << carteleria
