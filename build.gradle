@@ -45,4 +45,10 @@ task catalogo(type: GoBqaTest) {
     headless = false
 }
 
+
+task notaventa(type: GoBqaTest) {
+    suites "notaventa/notaVenta01.xls"
+    headless = false
+}
+
 test.dependsOn << carteleria
