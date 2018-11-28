@@ -55,4 +55,9 @@ task notaventa1(type: GoBqaTest) {
     headless = false
 }
 
+task garantia(type: GoBqaTest) {
+    suites "garantia/garantia.xls"
+    headless = false
+}
+
 test.dependsOn << carteleria
