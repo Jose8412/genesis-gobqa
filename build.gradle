@@ -46,12 +46,7 @@ task catalogo(type: GoBqaTest) {
 }
 
 task notaventa(type: GoBqaTest) {
-    suites "notaventa/notaVenta01.xls"
-    headless = false
-}
-
-task notaventa1(type: GoBqaTest) {
-    suites "notaventa/notaVenta03.xls"
+    suites "notaventa/*.xls"
     headless = false
 }
 
