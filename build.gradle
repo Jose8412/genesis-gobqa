@@ -55,7 +55,7 @@ task notaventa1(type: GoBqaTest) {
     headless = false
 }
 
-task garantia(type: GoBqaTest) {
+task garantias(type: GoBqaTest) {
     suites "garantias/garantias.xls"
     headless = false
 }
