@@ -50,18 +50,13 @@ task notaventa(type: GoBqaTest) {
     headless = false
 }
 
-task notaventa2(type: GoBqaTest) {
-    suites "notaventa/*2.xls"
-    headless = false
-}
-
-task notaventa3(type: GoBqaTest) {
-    suites "notaventa/*3.xls"
+task notaventa1(type: GoBqaTest) {
+    suites "notaventa1/*.xls"
     headless = false
 }
 
 task garantia(type: GoBqaTest) {
-    suites "garantia/garantia.xls"
+    suites "garantias/garantias.xls"
     headless = false
 }
 
