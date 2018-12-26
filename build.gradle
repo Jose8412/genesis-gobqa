@@ -60,4 +60,14 @@ task garantias(type: GoBqaTest) {
     headless = false
 }
 
+task aperturascajas(type: GoBqaTest) {
+    suites "aperturascajas/*.xls"
+    headless = false
+}
+
+task cierrecajas(type: GoBqaTest) {
+    suites "cierrecajas/*.xls"
+    headless = false
+}
+
 test.dependsOn << carteleria
