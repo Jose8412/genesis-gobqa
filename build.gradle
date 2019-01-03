@@ -61,7 +61,7 @@ task garantias(type: GoBqaTest) {
 }
 
 task aperturacajas(type: GoBqaTest) {
-    suites "aperturascajas/*.xls"
+    suites "aperturacajas/*.xls"
     headless = false
 }
 
