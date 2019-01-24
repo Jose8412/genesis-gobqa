@@ -84,5 +84,9 @@ task pruebasfmwk(type: GoBqaTest) {
     headless = false
 }
 
+task expoventa(type: GoBqaTest) {
+    suites "expoventa/*.xls"
+    headless = false
+}
 
 test.dependsOn << carteleria
