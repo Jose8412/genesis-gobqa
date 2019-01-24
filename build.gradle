@@ -79,4 +79,10 @@ task cierrecajas(type: GoBqaTest) {
     headless = false
 }
 
+task pruebasfmwk(type: GoBqaTest) {
+    suites "pruebasfmwk/*.xls"
+    headless = false
+}
+
+
 test.dependsOn << carteleria
