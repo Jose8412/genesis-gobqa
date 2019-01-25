@@ -69,10 +69,6 @@ task aperturacajas(type: GoBqaTest) {
     headless = false
 }
 
-task entregas(type: GoBqaTest) {
-    suites "entregas/*.xls"
-    headless = false
-}
 
 task cierrecajas(type: GoBqaTest) {
     suites "cierrecajas/*.xls"
@@ -88,5 +84,16 @@ task expoventa(type: GoBqaTest) {
     suites "expoventa/*.xls"
     headless = false
 }
+
+task ventatelefonica(type: GoBqaTest) {
+    suites "ventatelefonica/*.xls"
+    headless = false
+}
+
+task entregas(type: GoBqaTest) {
+    suites "entregas/*.xls"
+    headless = false
+}
+
 
 test.dependsOn << carteleria
