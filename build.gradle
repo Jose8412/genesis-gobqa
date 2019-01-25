@@ -74,7 +74,7 @@ task entregas(type: GoBqaTest) {
     headless = false
 }
 
-task entregas(type: GoBqaTest) {
+task entregas1(type: GoBqaTest) {
     suites "entregas1/*.xls"
     headless = false
 }
