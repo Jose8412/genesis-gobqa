@@ -1,8 +1,18 @@
 import com.bairesqa.gobqa.gradle.GoBqaTest
 
 // plugins { id "bairesqa.gobqa" version "0.3.wc" }
-buildscript { dependencies { classpath files("lib/gobqa-0.4.jar") } }
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "io.qameta.allure:allure-gradle:2.3" , files("lib/gobqa-0.4.jar")
+    }
+}
 apply plugin: "bairesqa.gobqa"
+apply plugin: 'io.qameta.allure'
 
 wrapper {
     gradleVersion = '4.9'
@@ -20,6 +30,11 @@ repositories {
 
 dependencies {
     runtime files('lib/gobqa-0.4.jar')
+}
+
+allure {
+    version = '2.7.0'
+    autoconfigure = true
 }
 
 idea {
