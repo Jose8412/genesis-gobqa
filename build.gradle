@@ -110,7 +110,7 @@ task ventatelefonica(type: GoBqaTest) {
 }
 
 task entregas(type: GoBqaTest) {
-    suites "entregas/entregas02.xls"
+    suites "entregas/entregas01.xls"
     headless = false
 }
 
