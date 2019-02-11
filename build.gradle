@@ -105,7 +105,7 @@ task expoventa(type: GoBqaTest) {
 }
 
 task ventatelefonica(type: GoBqaTest) {
-    suites "ventatelefonica/ventaTelefonica01.xls"
+    suites "ventatelefonica/*.xls"
     headless = false
 }
 
