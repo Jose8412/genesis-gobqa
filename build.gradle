@@ -119,5 +119,9 @@ task entregas(type: GoBqaTest) {
     headless = false
 }
 
+task carteleria2(type: GoBqaTest) {
+    suites "carteleria/Carteleria02TC.xls"
+    headless = false
+}
 
 test.dependsOn << carteleria
