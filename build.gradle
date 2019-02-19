@@ -51,7 +51,7 @@ rebuild.dependsOn << clean
 rebuild.dependsOn << test
 
 task carteleria(type: GoBqaTest) {
-    suites "carteleria/Carteleria01TC.xls"
+    suites "carteleria/*.xls"
     headless = false
 }
 
@@ -119,9 +119,5 @@ task entregas(type: GoBqaTest) {
     headless = false
 }
 
-task carteleria2(type: GoBqaTest) {
-    suites "carteleria/Carteleria02TC.xls"
-    headless = false
-}
 
 test.dependsOn << carteleria
