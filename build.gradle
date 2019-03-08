@@ -50,6 +50,17 @@ task rebuild {}
 rebuild.dependsOn << clean
 rebuild.dependsOn << test
 
+processTestResources.doLast {
+    def profile = rootProject.properties["gobqa.profile"]
+//    println "GOBQA profile = $profile"
+    if (profile) {
+        copy {
+            into "build/resources/test"
+            from( "src/test/profileResources/$profile")
+        }
+    }
+}
+
 task carteleria(type: GoBqaTest) {
     suites "carteleria/*.xls"
     headless = false
