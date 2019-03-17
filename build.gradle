@@ -134,5 +134,8 @@ task entregas(type: GoBqaTest) {
     headless = false
 }
 
-
+task notadeventaFEP01TC(type: GoBqaTest) {
+    suites "notadeventaFEP01TC/*.xls"
+    headless = false
+}
 test.dependsOn << carteleria
