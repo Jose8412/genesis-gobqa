@@ -76,6 +76,11 @@ task notaventa(type: GoBqaTest) {
     headless = false
 }
 
+task motos(type: GoBqaTest) {
+    suites "motos/*.xls"
+    headless = false
+}
+
 task notaventa1(type: GoBqaTest) {
     suites "notaventa1/*.xls"
     headless = false
@@ -96,7 +101,7 @@ task aperturacajas(type: GoBqaTest) {
 }
 
 task clientes(type: GoBqaTest) {
-    suites "clientes/*.xls"
+    suites "clientes/Clientes01.xls"
     headless = false
 }
 
