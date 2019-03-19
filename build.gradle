@@ -106,7 +106,7 @@ task aperturacajas(type: GoBqaTest) {
 }
 
 task clientes(type: GoBqaTest) {
-    suites "clientes/Clientes01.xls"
+    suites "clientes/*.xls"
     headless = false
 }
 
