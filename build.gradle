@@ -86,6 +86,10 @@ task notaventa1(type: GoBqaTest) {
     headless = false
 }
 
+task notaventa2(type: GoBqaTest) {
+    suites "notaventa2/*.xls"
+    headless = false
+}
 
 task notacreditosaldo(type: GoBqaTest) {
     suites "notacreditosaldo/*.xls"
