@@ -119,6 +119,12 @@ task entregas1(type: GoBqaTest) {
     suites "entregas1/*.xls"
     headless = false
 }
+
+task notacredito(type: GoBqaTest) {
+    suites "notacredito/*.xls"
+    headless = false
+}
+
 task cierrecajas(type: GoBqaTest) {
     suites "cierrecajas/*.xls"
     headless = false
