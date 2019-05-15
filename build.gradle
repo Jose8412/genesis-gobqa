@@ -110,8 +110,8 @@ task clientes(type: GoBqaTest) {
     headless = false
 }
 
-task seggar(type: GoBqaTest) {
-    suites "seggar/*.xls"
+task cotizacionautoseggar(type: GoBqaTest) {
+    suites "cotizacionautoseggar/*.xls"
     headless = false
 }
 
