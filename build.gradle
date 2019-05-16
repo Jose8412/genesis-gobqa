@@ -131,7 +131,7 @@ task cierrecajas(type: GoBqaTest) {
 }
 
 task pruebasfmwk(type: GoBqaTest) {
-    suites "pruebasfmwk/*.xls"
+    suites "pruebasfmwk/p*.xls"
     headless = false
 }
 
