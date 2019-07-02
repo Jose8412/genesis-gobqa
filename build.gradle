@@ -160,6 +160,11 @@ task notadeventaFEP01TC(type: GoBqaTest) {
     headless = false
 }
 
+task productoWS(type: GoBqaTest) {
+    suites "productoWS/*.xls"
+    headless = false
+}
+
 task clientes02(type: GoBqaTest) {
     suites "clientes/clientes02.xls"
     headless = false
