@@ -110,8 +110,8 @@ task clientes(type: GoBqaTest) {
     headless = false
 }
 
-task cotizacionautoseggar(type: GoBqaTest) {
-    suites "cotizacionautoseggar/*.xls"
+task cotizacionesseggar(type: GoBqaTest) {
+    suites "cotizacionesseggar/*.xls"
     headless = false
 }
 
@@ -169,4 +169,5 @@ task clientes02(type: GoBqaTest) {
     suites "clientes/clientes02.xls"
     headless = false
 }
+
 test.dependsOn << carteleria
