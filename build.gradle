@@ -110,8 +110,8 @@ task clientes(type: GoBqaTest) {
     headless = false
 }
 
-task cotizacionautoseggar(type: GoBqaTest) {
-    suites "cotizacionautoseggar/*.xls"
+task cotizacionesseggar(type: GoBqaTest) {
+    suites "cotizacionesseggar/*.xls"
     headless = false
 }
 
@@ -131,7 +131,7 @@ task cierrecajas(type: GoBqaTest) {
 }
 
 task pruebasfmwk(type: GoBqaTest) {
-    suites "pruebasfmwk/p*.xls"
+    suites "pruebasfmwk/b*.xls"
     headless = false
 }
 
@@ -170,12 +170,4 @@ task clientes02(type: GoBqaTest) {
     headless = false
 }
 
-task domiciliaria(type: GoBqaTest) {
-    suites "domiciliaria/*.xls"
-    headless = false
-}
-task domiciliaria1(type: GoBqaTest) {
-    suites "domiciliaria1/*.xls"
-    headless = false
-}
 test.dependsOn << carteleria
