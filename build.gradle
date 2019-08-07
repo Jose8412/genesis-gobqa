@@ -170,4 +170,14 @@ task clientes02(type: GoBqaTest) {
     headless = false
 }
 
+task domiciliaria(type: GoBqaTest) {
+    suites "domiciliaria/*.xls"
+    headless = false
+}
+
+task domiciliaria1(type: GoBqaTest) {
+    suites "domicliliaria1/*.xls"
+    headless = false
+}
+
 test.dependsOn << carteleria
