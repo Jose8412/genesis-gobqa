@@ -176,7 +176,7 @@ task domiciliaria(type: GoBqaTest) {
 }
 
 task domiciliaria1(type: GoBqaTest) {
-    suites "domicliliaria1/*.xls"
+    suites "domiciliaria1/*.xls"
     headless = false
 }
 
