@@ -189,4 +189,5 @@ task configuraciones(type: GoBqaTest) {
     headless = false
 }
 
+
 test.dependsOn << carteleria
