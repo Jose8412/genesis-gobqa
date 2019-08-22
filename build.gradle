@@ -131,7 +131,7 @@ task cierrecajas(type: GoBqaTest) {
 }
 
 task pruebasfmwk(type: GoBqaTest) {
-    suites "pruebasfmwk/b*.xls"
+    suites "pruebasfmwk/pruebasfmwk.xls"
     headless = false
 }
 
@@ -183,5 +183,11 @@ task domiciliaria1(type: GoBqaTest) {
     suites "domiciliaria1/*.xls"
     headless = false
 }
+
+task configuraciones(type: GoBqaTest) {
+    suites "configuraciones01/*.xls"
+    headless = false
+}
+
 
 test.dependsOn << carteleria
