@@ -92,7 +92,7 @@ task notaventa2(type: GoBqaTest) {
 }
 
 task notacreditosaldo(type: GoBqaTest) {
-    suites "notacreditosaldo/notacreditosaldo01.xls"
+    suites "notacreditosaldo/*.xls"
     headless = false
 }
 task garantias(type: GoBqaTest) {
@@ -106,7 +106,7 @@ task aperturacajas(type: GoBqaTest) {
 }
 
 task clientes(type: GoBqaTest) {
-    suites "clientes/clientes01.xls"
+    suites "clientes/*.xls"
     headless = false
 }
 
@@ -131,7 +131,7 @@ task cierrecajas(type: GoBqaTest) {
 }
 
 task pruebasfmwk(type: GoBqaTest) {
-    suites "pruebasfmwk/p*.xls"
+    suites "pruebasfmwk/pruebasfmwk.xls"
     headless = false
 }
 
@@ -171,6 +171,21 @@ task clientes02(type: GoBqaTest) {
 }
 task caja(type: GoBqaTest) {
     suites "caja/*.xls"
+    headless = false
+}
+
+task domiciliaria(type: GoBqaTest) {
+    suites "domiciliaria/*.xls"
+    headless = false
+}
+
+task domiciliaria1(type: GoBqaTest) {
+    suites "domiciliaria1/*.xls"
+    headless = false
+}
+
+task configuraciones(type: GoBqaTest) {
+    suites "configuraciones/*.xls"
     headless = false
 }
 test.dependsOn << carteleria
