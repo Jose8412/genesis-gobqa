@@ -188,5 +188,4 @@ task configuraciones(type: GoBqaTest) {
     suites "configuraciones/*.xls"
     headless = false
 }
-
 test.dependsOn << carteleria
