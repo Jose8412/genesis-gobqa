@@ -71,6 +71,11 @@ task catalogo(type: GoBqaTest) {
     headless = false
 }
 
+task ventacambioprecio(type: GoBqaTest) {
+    suites "ventacambioprecio/*.xls"
+    headless = false
+}
+
 task notaventa(type: GoBqaTest) {
     suites "notaventa/*.xls"
     headless = false
@@ -131,7 +136,7 @@ task cierrecajas(type: GoBqaTest) {
 }
 
 task pruebasfmwk(type: GoBqaTest) {
-    suites "pruebasfmwk/b*.xls"
+    suites "pruebasfmwk/pruebasfmwk.xls"
     headless = false
 }
 
@@ -169,6 +174,10 @@ task clientes02(type: GoBqaTest) {
     suites "clientes/clientes02.xls"
     headless = false
 }
+task caja(type: GoBqaTest) {
+    suites "caja/*.xls"
+    headless = false
+}
 
 task domiciliaria(type: GoBqaTest) {
     suites "domiciliaria/*.xls"
@@ -180,4 +189,8 @@ task domiciliaria1(type: GoBqaTest) {
     headless = false
 }
 
+task configuraciones(type: GoBqaTest) {
+    suites "configuraciones/*.xls"
+    headless = false
+}
 test.dependsOn << carteleria
