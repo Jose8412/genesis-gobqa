@@ -71,6 +71,11 @@ task catalogo(type: GoBqaTest) {
     headless = false
 }
 
+task ventacambioprecio(type: GoBqaTest) {
+    suites "ventacambioprecio/*.xls"
+    headless = false
+}
+
 task notaventa(type: GoBqaTest) {
     suites "notaventa/*.xls"
     headless = false
