@@ -195,7 +195,7 @@ task configuraciones(type: GoBqaTest) {
 }
 
 task notaventa3(type: GoBqaTest) {
-    suites "notaVenta06/*.xls"
+    suites "notaventa3/*.xls"
     headless = false
 }
 
