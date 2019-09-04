@@ -81,6 +81,11 @@ task notaventa(type: GoBqaTest) {
     headless = false
 }
 
+task notapedido(type: GoBqaTest) {
+    suites "suppliernotapedido/*.xls"
+    headless = false
+}
+
 task motos(type: GoBqaTest) {
     suites "motos/*.xls"
     headless = false
@@ -195,7 +200,7 @@ task configuraciones(type: GoBqaTest) {
 }
 
 task notaventa3(type: GoBqaTest) {
-    suites "notaVenta06/*.xls"
+    suites "notaventa3/*.xls"
     headless = false
 }
 
