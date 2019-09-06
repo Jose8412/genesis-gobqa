@@ -175,8 +175,8 @@ task productoWS(type: GoBqaTest) {
     headless = false
 }
 
-task clientes02(type: GoBqaTest) {
-    suites "clientes/clientes02.xls"
+task clientes03(type: GoBqaTest) {
+    suites "clientes/clientes03.xls"
     headless = false
 }
 task caja(type: GoBqaTest) {
