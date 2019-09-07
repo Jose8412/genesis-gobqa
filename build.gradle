@@ -208,4 +208,9 @@ task efectivoweb01(type: GoBqaTest) {
     suites "efectivoweb01/*.xls"
     headless = false
 }
+
+task notaventa4(type: GoBqaTest) {
+    suites "notaventa4/*.xls"
+    headless = false
+}
 test.dependsOn << carteleria
