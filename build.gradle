@@ -175,8 +175,8 @@ task productoWS(type: GoBqaTest) {
     headless = false
 }
 
-task clientes02(type: GoBqaTest) {
-    suites "clientes/clientes02.xls"
+task clientes03(type: GoBqaTest) {
+    suites "clientes/clientes03.xls"
     headless = false
 }
 task caja(type: GoBqaTest) {
@@ -206,6 +206,11 @@ task notaventa3(type: GoBqaTest) {
 
 task efectivoweb01(type: GoBqaTest) {
     suites "efectivoweb01/*.xls"
+    headless = false
+}
+
+task notaventa4(type: GoBqaTest) {
+    suites "notaventa4/*.xls"
     headless = false
 }
 test.dependsOn << carteleria
