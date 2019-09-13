@@ -180,7 +180,7 @@ task clientes02(type: GoBqaTest) {
     headless = false
 }
 task caja(type: GoBqaTest) {
-    suites "caja/*.xls"
+    suites "caja/caja02.xls"
     headless = false
 }
 
