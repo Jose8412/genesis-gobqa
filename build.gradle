@@ -155,7 +155,7 @@ task ventatelefonica(type: GoBqaTest) {
     headless = false
 }
 
-task ventaempresaria(type: GoBqaTest) {
+task ventaempresaria01(type: GoBqaTest) {
     suites "ventaempresaria/*.xls"
     headless = false
 }
@@ -211,6 +211,11 @@ task efectivoweb01(type: GoBqaTest) {
 
 task notaventa4(type: GoBqaTest) {
     suites "notaventa4/*.xls"
+    headless = false
+}
+
+task notaventacompumundo(type: GoBqaTest) {
+    suites "notaventacompumundo/*.xls"
     headless = false
 }
 test.dependsOn << carteleria
